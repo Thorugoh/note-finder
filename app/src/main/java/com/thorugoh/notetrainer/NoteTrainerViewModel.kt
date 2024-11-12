@@ -15,7 +15,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-const val TIMER = 5
+const val TIMER = 60
 sealed interface NoteToFindUiState {
     object Loading : NoteToFindUiState
     data class Ready(val note: String, val score: Int, val timeLeft: Int) : NoteToFindUiState
